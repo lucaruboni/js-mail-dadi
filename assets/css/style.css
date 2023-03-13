@@ -1,3 +1,12 @@
 .card_heigth{
     height: 150px;
 }
+
+.result_style{
+    border: 1px solid white;
+    background-color: black;
+    color: antiquewhite;
+}
+body{
+    background-image: url(../img/dice.jpg);
+}
