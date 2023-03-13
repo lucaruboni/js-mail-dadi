@@ -15,12 +15,29 @@ Che ci sia un array da qualche parte?
 
 Se dobbiamo confrontare qualcosa che "cosa" ci serve? */
 
+//variabili
+
+const mailOutputEl = document.querySelector(".email_output");
+
 // seleziono l'input #send mail tramite querySelector
 
 const mailEl = document.querySelector("#send_mail");
-console.log("daje");
+console.log(mailEl.value);
 
 //seleziono il bottone e gli associo un event listener al click
 
 const sendButtonEl = document.querySelector(".send_btn");
-console.log("ncsp")
+console.log("button on")
+
+//eventListener
+
+sendButtonEl.addEventListener('click', function(){
+    console.log(mailEl.value);
+
+    const mailValue = mailEl.value;
+
+ // stampo in pagina
+ 
+    mailOutputEl.insertAdjacentHTML("afterend", mailValue);
+    console.log("email received!")
+})
