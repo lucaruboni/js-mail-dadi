@@ -9,4 +9,10 @@
 }
 body{
     background-image: url(../img/dice.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+main{
+    height: 100vh;
+    overflow-y: auto;
 }
