@@ -14,3 +14,13 @@ Prima di partire a scrivere codice poniamoci qualche domanda:
 Che ci sia un array da qualche parte?
 
 Se dobbiamo confrontare qualcosa che "cosa" ci serve? */
+
+// seleziono l'input #send mail tramite querySelector
+
+const mailEl = document.querySelector("#send_mail");
+console.log("daje");
+
+//seleziono il bottone e gli associo un event listener al click
+
+const sendButtonEl = document.querySelector(".send_btn");
+console.log("ncsp")
