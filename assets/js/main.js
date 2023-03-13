@@ -29,6 +29,8 @@ console.log(mailEl.value);
 const sendButtonEl = document.querySelector(".send_btn");
 console.log("button on")
 
+
+
 //eventListener
 
 sendButtonEl.addEventListener('click', function(){
@@ -36,8 +38,44 @@ sendButtonEl.addEventListener('click', function(){
 
     const mailValue = mailEl.value;
 
+        mailOutputEl.insertAdjacentHTML("afterend", mailValue);
+        console.log("checked")
+        
+    
  // stampo in pagina
- 
-    mailOutputEl.insertAdjacentHTML("afterend", mailValue);
-    console.log("email received!")
+    
+   
+})
+
+/* DICE GAME */
+
+//creo la lista dei giocatori
+
+//aggiungo un bottone per iniziare il gioco
+
+//quando clicco il bottone verranno generati due numeri ; quello per il giocatore e quello per il computer
+
+//stampo a scehrmo i numeri
+
+//il numero più alto vince e lo verifico con una condizione, se il numero del giocatore è più alto allora mostra a schermo hai vinto, altrimenti mostra hai perso.
+
+const playerListEl = [
+    'computer',
+    'player'
+]
+
+const btnPlay = document.querySelector(".start_game");
+console.log(btnPlay, "button-on")
+
+//event listener bntPlay
+
+
+btnPlay.addEventListener('click', function(){
+    const playerNumber = Math.floor(Math.random() * 6)
+    console.log(playerNumber, 'dice-result')
+
+    const computerNumber = Math.floor(Math.random() * 6)
+    console.log(computerNumber, 'dice-result-pc')
+
+
 })
