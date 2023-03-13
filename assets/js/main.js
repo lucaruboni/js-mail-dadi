@@ -85,7 +85,7 @@ btnPlay.addEventListener('click', function(){
     console.log(computerNumber, 'dice-result-pc')
     pcNumberOutput.insertAdjacentHTML("beforeend", computerNumber)
 
-    if (playerNumber > computerNumber){
+    if (playerNumber < computerNumber){
         diceResult.insertAdjacentHTML("beforeend", `<p class="text-center mt-5 border-1 rounded-1 result_style">${"Hai Perso!"}</p>`)
     }
 
