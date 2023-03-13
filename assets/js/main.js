@@ -19,6 +19,9 @@ Se dobbiamo confrontare qualcosa che "cosa" ci serve? */
 
 const mailOutputEl = document.querySelector(".email_output");
 
+const playerNumberOutput = document.querySelector(".playerOutput")
+
+const pcNumberOutput = document.querySelector(".pcOutput")
 // seleziono l'input #send mail tramite querySelector
 
 const mailEl = document.querySelector("#send_mail");
@@ -73,9 +76,10 @@ console.log(btnPlay, "button-on")
 btnPlay.addEventListener('click', function(){
     const playerNumber = Math.floor(Math.random() * 6)
     console.log(playerNumber, 'dice-result')
+    playerNumberOutput.insertAdjacentHTML("beforeend", playerNumber)
 
     const computerNumber = Math.floor(Math.random() * 6)
     console.log(computerNumber, 'dice-result-pc')
-
+    pcNumberOutput.insertAdjacentHTML("beforeend", computerNumber)
 
 })
